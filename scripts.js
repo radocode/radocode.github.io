@@ -1,7 +1,7 @@
-//var $menu = $('.Menu-list'),
-//    $item = $('.Menu-list-item'),
-//    w = $(window).width(), //window width
-//    h = $(window).height(); //window height
+var $menu = $('.Menu-list'),
+    $item = $('.Menu-list-item'),
+    w = $(window).width(), //window width
+    h = $(window).height(); //window height
 
 $(window).on('mousemove', function(e) {
   var offsetX = 0.5 - e.pageX / w, //cursor position X
