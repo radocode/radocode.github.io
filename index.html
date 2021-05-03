@@ -1,41 +1,438 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Francisco González | Radocode</title>
-
-	<link rel="icon" href="favicon.ico" type="image/png" />
-
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/particles.css">
-	<link rel="stylesheet" href="css/themes/indigo-white.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-	<div id="particles-js">
-	</div>
-	<div class="principal">
-		<main>
-			<div class="intro">Francisco González</div>
-			<div class="tagline">Hi! I code stuff! | Angular 2+ | React.js | Node.js | JS | ...check my Github for more!</div>
-			<div class="icons-social">
-				<a target="_blank" href="https://github.com/radocode"><i class="fab fa-github"></i></a>
-				<a target="_blank" href="https://twitter.com/radocodecl"><i class="fab fa-twitter"></i></a>
-				<a target="_blank" href="https://stackoverflow.com/users/story/12848514"><i class="fab fa-stack-overflow"></i></a>
-				<a target="_blank" href="https://www.linkedin.com/in/franciscogonzalezlorca"><i class="fab fa-linkedin"></i></a>
-			</div>
-		</main>
-	</div>
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-	<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-	<script src="js/particles.js"></script>
+  <div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <!-- End #mobile-menu-toggle -->
+  <header>
+    <div id="mobile-menu-close">
+      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <ul id="menu" class="shadow">
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#experience">Experience</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <!-- End header -->
+
+  <div id="lead">
+    <div id="lead-content">
+      <h1>Francisco Gonzalez</h1>
+      <h2>Fullstack Developer</h2>
+      <a href="https://stackoverflow.com/users/story/pdf/12848514?View=Pdf" class="btn-rounded-white">Download
+        Resume</a>
+    </div>
+    <!-- End #lead-content -->
+
+    <div id="lead-overlay"></div>
+
+    <div id="lead-down">
+      <span>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </span>
+    </div>
+    <!-- End #lead-down -->
+  </div>
+  <!-- End #lead -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="heading">About Me</h2>
+        </div>
+        <div class="col-md-8">
+          <p>
+            I work as a Fullstack Developer, mainly focused in Javascript. I have experiences working with fintech,
+            retail and
+            transport industries. <br /><br />
+
+            I enjoy a lot working and researching on new technologies, with small, simple, yet very effective solutions.
+            My favorite
+            frameworks/libraries/runtimes are Angular 2+ and React.js, but I also know Node.js and .NET
+            (C#).<br /><br />
+
+            I love to help and guide people around with my current knowledge, and I am always willing to learn new
+            things. I do a
+            lot of research in order to share it later with everyone whenever I can. Always open to learn a new language
+            or
+            technique!<br /><br />
+
+            I like to work under Agile methods and Scrum/Kanban teams as well.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End #about -->
+
+  <div id="experience" class="background-alt">
+    <h2 class="heading">Experience</h2>
+    <div id="experience-timeline">
+      <div data-date="March 2019 – Current">
+        <h3>Amaris</h3>
+        <h4>Consultant</h4>
+        <p>
+          Consultant role as a Full-stack developer in Angular 8+, React, Vue.js, Node.js and Typescript for different
+          clients,
+          including Banking and Transport Services (Consorcio Banking and Sodexo).
+        </p>
+        <br>
+        <p>
+          - Sodexo:
+
+          Made in Angular 2+, we had to make a complete overhaul of the company's transport service Movilpass
+          (www.movilpass.cl)
+        </p>
+        <br>
+        <p>
+          - Consorcio:
+
+          Consorcio required to be made very quickly a Portability Banking service portal, which helps to get potential
+          new
+          clients to bring their previous banking products from other banks to Consorcio.
+
+          Frontend was made in Vue.js and mounted in Modyo, which served to host the application very similar of how
+          Sharepoint or
+          Django does
+
+          Has cloud integration with AWS Lambda and API Gateway.
+
+          Creation of RESTful APIs made in NestJS, integrating different AWS lambda and legacy services. We used Redis
+          for cache
+          and CI/CD with Gitlab.
+        </p>
+        <br>
+        <p>
+          - Extras:
+
+          Training coach specialist in front-end technologies (to deliver training courses and workshops) like HTML and
+          Angular.
+        </p>
+      </div>
+
+      <div data-date="November 2018 – February 2019">
+        <h3>Lagash</h3>
+        <h4>Developer</h4>
+        <p>
+          Full-stack developer for a car insurance company called Tanner, using NodeJS and ReactJS.
+        </p>
+        <br>
+        <p>
+          - We developed a car insurance backoffice web portal fully hosted in Microsoft Azure.
+        </p>
+        <br>
+        <p>
+          - Backend was made in Node with Restify, using Azure's cloud databases for storage.
+        </p>
+        <br>
+        <p>
+          - Frontend was made using React + Redux and Material UI for the components. We had to integrate our
+          microservices made in
+          Node with the frontend app.
+        </p>
+      </div>
+
+      <div data-date="October 2017 – August 2018">
+        <h3>Everis</h3>
+        <h4>Solutions Analyst</h4>
+        <p>
+          Front-end developer in Angular 2+/NodeJS for BCI (Office Banking), as a part of their Migration and Digital
+          Transformation process.
+        </p>
+        <br>
+        <p>
+          - We worked in a huge Agile project which involved around five agile squads all working on the same product.
+          Dailies and
+          meetings were big!
+        </p>
+        <br>
+        <p>
+          - My squad had two frontend devs, two backend devs completely dedicated to Spring Boot, one QA person and one
+          Tech Lead to
+          guide us. I was one of the frontend devs.
+        </p>
+        <br>
+        <p>
+          - We frontend devs had also to develop not only in Angular, but also in the app's BFF (Backend for Frontend)
+          that was made
+          in Node.js with Express. Our job was to call the microservices made in Spring Boot and process/format the data
+          ready for
+          the frontend to use it.
+        </p>
+        <br>
+        <p>
+          - Technologies used: Angular 2+ (native, Material) and NodeJS (with Express).
+        </p>
+
+      </div>
+
+      <div data-date="September 2015 – October 2017">
+        <h3>Defontana</h3>
+        <h4>Developer</h4>
+        <p>
+          .NET and VB Developer in ERP Products, Continuous Integration, and Backend REST solutions for Defontana's
+          Digital
+          Transformation process.
+        </p>
+        <br>
+        <p>
+          - Technologies used: C#, VB.NET, WCF (microservices), MS Web API, ASP.NET, Razor, SQL Server 2018
+        </p>
+        <br>
+        <p>
+          - Legacy technologies: VB 6, ASP
+        </p>
+      </div>
+
+      <div data-date="April 2015 – August 2015">
+        <h3>Tuten</h3>
+        <h4>Backend Developer</h4>
+        <p>
+          Backend designer, REST services programmer, Database developer.
+        </p>
+        <br>
+        <p>
+          - TUTEN is a web/mobile app service that helps people search for professional household services (painting,
+          plumbers,
+          electrical, etc). Works similar to Uber.
+        </p>
+        <br>
+        <p>
+          - I designed the database and REST services for TUTEN app's first version.
+        </p>
+        <br>
+        <p>
+          - With the team, we travelled to Boston, USA for 3 months to MassChallenge's 2015 startup accelerator
+          conference, to learn
+          how to boost the startup business process and development cycle.
+        </p>
+        <br>
+        <p>
+          - Technologies used: Java, JAX-RS, Postgres SQL
+        </p>
+      </div>
+      <div data-date="January 2011 – March 2015">
+        <h3>TAISA Chile</h3>
+        <h4>Developer</h4>
+        <p>
+          Software Developer for web and mobile solutions, using .NET (C#, ASP.NET), Java (EE and WebSphere), SQL
+          Server, PHP,
+          plus maintaining some other legacy software used in Banking like ASP. Clients worked with: Santander, SURA,
+          Corpbanca.
+        </p>
+        <br>
+        <p>
+          - Technologies used: C#, Java, ASP.NET, ASP, SQL Server.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End #experience -->
+
+  <div id="education">
+    <h2 class="heading">Education</h2>
+    <div class="education-block">
+      <h3>DUOC UC</h3>
+      <span class="education-date">January 2005 - January 2010</span>
+      <h4>Bachelor in Computer Science</h4>
+      <p>
+        Focusing in Microsoft Technologies, and volunteer work in the Microsoft Student Partners program, educational
+        talks in
+        technology to local college.
+      </p>
+    </div>
+    <!-- End .education-block -->
+
+    <!-- <div class="education-block">
+      <h3>University of Ottawa</h3>
+      <span class="education-date">Sept 2016 - Sept 2017</span>
+      <h4>Bachelor of Science in Computer Science</h4>
+      <ul>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </li>
+      </ul>
+    </div> -->
+    <!-- End .education-block -->
+  </div>
+  <!-- End #education -->
+
+  <div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+      <div class="row">
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="images/logo_movil_portada.png" />
+          </div>
+          <!-- End .project-image -->
+          <div class="project-info">
+            <h3>Sodexo Movilpass</h3>
+            <p>
+              Made in Angular 2+, we had to make a complete overhaul of the company's transport service Sodexo's
+              Movilpass.
+            </p>
+            <a href="https://www.movilpass.cl/">View Project</a>
+          </div>
+          <!-- End .project-info -->
+        </div>
+        <!-- End .project -->
+
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="images/consorcio_logo.jpeg" />
+          </div>
+          <!-- End .project-image -->
+          <div class="project-info">
+            <h3>Consorcio Portabilidad Financiera</h3>
+            <p>
+              Consorcio required to be made very quickly a Portability Banking service portal, which helps to get
+              potential
+              new
+              clients to bring their previous banking products from other banks to Consorcio.
+            </p>
+            <a href="https://portabilidad.consorcio.cl/">View Project</a>
+          </div>
+          <!-- End .project-info -->
+        </div>
+        <!-- End .project -->
+      </div>
+    </div>
+  </div>
+  <!-- End #projects -->
+
+  <div id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <!-- <li>Python</li> -->
+      <!-- <li>Ruby</li> -->
+      <li>Angular</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Go</li>
+      <!-- <li>Elixir</li> -->
+      <!-- <li>Java</li> -->
+      <!-- <li>C</li> -->
+      <li>C#</li>
+      <!-- <li>C++</li> -->
+      <!-- <li>Ruby on Rails</li> -->
+      <!-- <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>Node.js</li>
+            <li>AngularJs</li>
+            <li>React</li>
+            <li>Elixir</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>Ruby on Rails</li> -->
+    </ul>
+  </div>
+  <!-- End #skills -->
+
+  <div id="contact">
+    <h2>Get in Touch</h2>
+    <div id="contact-form">
+      <form method="POST" action="https://formspree.io/francisco.gonzalez.lorca@gmail.com">
+        <input type="hidden" name="_subject" value="Contact request from personal website" />
+        <input type="email" name="_replyto" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!-- End #contact-form -->
+  </div>
+  <!-- End #contact -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 copyright">
+          <p>
+            Copyright &copy; 2020 RADOCODE
+          </p>
+        </div>
+        <div class="col-sm-2 top">
+          <span id="to-top">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="col-sm-5 social">
+          <ul>
+            <li>
+              <a href="https://github.com/radocode" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/users/story/12848514" target="_blank"><i class="fa fa-stack-overflow"
+                  aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/franciscogonzalezlorca/" target="_blank"><i class="fa fa-linkedin"
+                  aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li> -->
+            <li>
+              <a href="https://twitter.com/radocodecl" target="_blank"><i class="fa fa-twitter"
+                  aria-hidden="true"></i></a>
+            </li>
+            <!-- <li>
+              <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"
+                  aria-hidden="true"></i></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
