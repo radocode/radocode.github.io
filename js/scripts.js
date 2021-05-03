@@ -93,5 +93,9 @@
             $('#more-projects').fadeIn(300);
         });
     });
+    
+    // get current year
+    $("#currentYear").text( (new Date).getFullYear() );
+
 
 })(jQuery);
