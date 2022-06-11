@@ -1,448 +1,1183 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Radocode</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radocode</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-</head>
+    <!-- Favicons
+================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- / Favicons
+================================================== -->
 
-<body>
-  <div id="mobile-menu-open" class="shadow-large">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </div>
-  <!-- End #mobile-menu-toggle -->
-  <header>
-    <div id="mobile-menu-close">
-      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-    </div>
-    <ul id="menu" class="shadow">
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#experience">Experience</a>
-      </li>
-      <li>
-        <a href="#education">Education</a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
-  </header>
-  <!-- End header -->
+    <!-- >> CSS
+============================================================================== -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Web Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Nivo Lightbox -->
+    <link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="vendor/nivo-lightbox/themes/default/default.css"
+      type="text/css"
+    />
+    <!-- /Nivo Lightbox -->
+    <!-- Perfect ScrollBar -->
+    <link
+      href="vendor/perfect-scrollbar/css/perfect-scrollbar.min.css"
+      rel="stylesheet"
+    />
+    <!-- owl carousel -->
+    <link
+      href="vendor/owl.carousel/owl-carousel/owl.carousel.css"
+      rel="stylesheet"
+    />
+    <link
+      href="vendor/owl.carousel/owl-carousel/owl.theme.css"
+      rel="stylesheet"
+    />
+    <!-- Main Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/loader.css" rel="stylesheet" />
 
-  <div id="lead">
-    <div id="lead-content">
-      <h1>Francisco Gonzalez</h1>
-      <h2>Fullstack Developer</h2>
-      <a href="/resumes/Francisco Gonzalez Lorca.pdf" class="btn-rounded-white">Download
-        Resume</a>
-    </div>
-    <!-- End #lead-content -->
-
-    <div id="lead-overlay"></div>
-
-    <div id="lead-down">
-      <span>
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-      </span>
-    </div>
-    <!-- End #lead-down -->
-  </div>
-  <!-- End #lead -->
-
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h2 class="heading">About Me</h2>
+    <!-- >> /CSS
+============================================================================== -->
+  </head>
+  <body>
+    <!-- Page Loader
+========================================================= -->
+    <div class="loader-container" id="page-loader">
+      <div class="loading-wrapper">
+        <div class="loader-animation" id="loader-animation">
+          <span class="loader"><span class="loader-inner"></span></span>
         </div>
-        <div class="col-md-8">
-          <p>
-            I am a Fullstack Developer, mainly focused in Javascript. Have experiences working with banking, retail and transport industries.<br /><br />
-
-            Worked on a lot of technologies and frameworks, with small, simple, yet very effective solutions.<br />
-            My favorite frameworks/libraries/runtimes are Angular 2+ and Node.js.<br /><br /> 
-            
-            Have also some experiences with cloud services like AWS (Lambdas and Step Functions) and MS Azure (APIs and Databases).<br />
-            My experiences allowed me to also work with Relational Databases (Postgres and SQL Server) and a bit of NoSQL (MongoDB).<br /><br />
-            
-            Always willing to learn something new and always open to learn new technologies!
-            
-            I also like to work under Agile methods and Scrum/Kanban teams as well.            
-          </p>
+        <!-- Edit With Your Name -->
+        <div class="loader-name" id="loader-name">
+          <strong>Radocode</strong>
         </div>
+        <!-- /Edit With Your Name -->
+        <!-- Edit With Your Job -->
+        <p class="loader-job" id="loader-job">Fullstack Developer</p>
+        <!-- /Edit With Your Job -->
       </div>
     </div>
-  </div>
-  <!-- End #about -->
+    <!-- /End of Page loader
+========================================================= -->
 
-  <div id="experience" class="background-alt">
-    <h2 class="heading">Experience</h2>
-    <div id="experience-timeline">
-      <div data-date="June 2021 - March 2022">
-        <h3>X-Team</h3>
-        <h4>Backend Developer</h4>
-        <p>
-          Backend Developer role for Rstudio, specializing in Node.js and Microservices with express.js. 
-          <br><br>
-Worked with Salesforce APIs, OAuth Integration, Clearbit, AWS Lambdas and Step Functions. Maintained and developed high standard libraries for Rstudio's Business Automation ecosystem.
-          <a href="https://x-team.com/">X-Team Website</a>
-        </p>
-      </div>
-      
-      <div data-date="March 2019 – June 2021">
-        <h3>Amaris</h3>
-        <h4>Consultant</h4>
-        <p>
-          Consultant role as a Full-stack developer in Angular 8+, Vue.js, Node.js and Typescript for different
-          clients,
-          including Banking and Transport Services (Consorcio Banking and Sodexo).
-        </p>
-        <br>
-        <p>
-          - Sodexo:
-
-          Made in Angular 2+, we had to make a complete overhaul of the company's transport service Movilpass
-          (www.movilpass.cl)
-        </p>
-        <br>
-        <p>
-          - Consorcio:
-
-          Consorcio required to be made very quickly a Portability Banking service portal, which helps to get potential
-          new
-          clients to bring their previous banking products from other banks to Consorcio.
-
-          Frontend was made in Vue.js and mounted in Modyo, which served to host the application very similar of how
-          Sharepoint or
-          Django does
-
-          Has cloud integration with AWS Lambda and API Gateway.
-
-          Creation of RESTful APIs made in NestJS, integrating different AWS lambda and legacy services. We used Redis
-          for cache
-          and CI/CD with Gitlab.
-        </p>
-        <br>
-        <p>
-          - Extras:
-
-          Training coach specialist in front-end technologies (to deliver training courses and workshops) like HTML and
-          Angular.
-        </p>
-      </div>
-
-      <div data-date="November 2018 – February 2019">
-        <h3>Lagash</h3>
-        <h4>Developer</h4>
-        <p>
-          Full-stack developer for a car insurance company called Tanner, using NodeJS and ReactJS.
-        </p>
-        <br>
-        <p>
-          - We developed a car insurance backoffice web portal fully hosted in Microsoft Azure.
-        </p>
-        <br>
-        <p>
-          - Backend was made in Node with Restify, using Azure's cloud databases for storage.
-        </p>
-        <br>
-        <p>
-          - Frontend was made using React + Redux and Material UI for the components. We had to integrate our
-          microservices made in
-          Node with the frontend app.
-        </p>
-      </div>
-
-      <div data-date="October 2017 – August 2018">
-        <h3>Everis</h3>
-        <h4>Solutions Analyst</h4>
-        <p>
-          Front-end developer in Angular 2+/NodeJS for BCI (Office Banking), as a part of their Migration and Digital
-          Transformation process.
-        </p>
-        <br>
-        <p>
-          - We worked in a huge Agile project which involved around five agile squads all working on the same product.
-          Dailies and
-          meetings were big!
-        </p>
-        <br>
-        <p>
-          - My squad had two frontend devs, two backend devs completely dedicated to Spring Boot, one QA person and one
-          Tech Lead to
-          guide us. I was one of the frontend devs.
-        </p>
-        <br>
-        <p>
-          - We frontend devs had also to develop not only in Angular, but also in the app's BFF (Backend for Frontend)
-          that was made
-          in Node.js with Express. Our job was to call the microservices made in Spring Boot and process/format the data
-          ready for
-          the frontend to use it.
-        </p>
-        <br>
-        <p>
-          - Technologies used: Angular 2+ (native, Material) and NodeJS (with Express).
-        </p>
-
-      </div>
-
-      <div data-date="September 2015 – October 2017">
-        <h3>Defontana</h3>
-        <h4>Developer</h4>
-        <p>
-          .NET and VB Developer in ERP Products, Continuous Integration, and Backend REST solutions for Defontana's
-          Digital
-          Transformation process.
-        </p>
-        <br>
-        <p>
-          - Technologies used: C#, VB.NET, WCF (microservices), MS Web API, ASP.NET, Razor, SQL Server 2018
-        </p>
-        <br>
-        <p>
-          - Legacy technologies: VB 6, ASP
-        </p>
-      </div>
-
-      <div data-date="April 2015 – August 2015">
-        <h3>Tuten</h3>
-        <h4>Backend Developer</h4>
-        <p>
-          Backend designer, REST services programmer, Database developer.
-        </p>
-        <br>
-        <p>
-          - TUTEN is a web/mobile app service that helps people search for professional household services (painting,
-          plumbers,
-          electrical, etc). Works similar to Uber.
-        </p>
-        <br>
-        <p>
-          - I designed the database and REST services for TUTEN app's first version.
-        </p>
-        <br>
-        <p>
-          - With the team, we travelled to Boston, USA for 3 months to MassChallenge's 2015 startup accelerator
-          conference, to learn
-          how to boost the startup business process and development cycle.
-        </p>
-        <br>
-        <p>
-          - Technologies used: Java, JAX-RS, Postgres SQL
-        </p>
-      </div>
-      <div data-date="January 2011 – March 2015">
-        <h3>TAISA Chile</h3>
-        <h4>Developer</h4>
-        <p>
-          Software Developer for web and mobile solutions, using .NET (C#, ASP.NET), Java (EE and WebSphere), SQL
-          Server, PHP,
-          plus maintaining some other legacy software used in Banking like ASP. Clients worked with: Santander, SURA,
-          Corpbanca.
-        </p>
-        <br>
-        <p>
-          - Technologies used: C#, Java, ASP.NET, ASP, SQL Server.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- End #experience -->
-
-  <div id="education">
-    <h2 class="heading">Education</h2>
-    <div class="education-block">
-      <h3>DUOC UC</h3>
-      <span class="education-date">January 2005 - January 2010</span>
-      <h4>Bachelor in Computer Science</h4>
-      <p>
-        Focusing in Microsoft Technologies, and volunteer work in the Microsoft Student Partners program, educational
-        talks in
-        technology to local college.
-      </p>
-    </div>
-    <!-- End .education-block -->
-
-    <!-- <div class="education-block">
-      <h3>University of Ottawa</h3>
-      <span class="education-date">Sept 2016 - Sept 2017</span>
-      <h4>Bachelor of Science in Computer Science</h4>
-      <ul>
-        <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </li>
-        <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </li>
-      </ul>
-    </div> -->
-    <!-- End .education-block -->
-  </div>
-  <!-- End #education -->
-
-  <div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-      <div class="row">
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="images/logo_movil_portada.png" />
-          </div>
-          <!-- End .project-image -->
-          <div class="project-info">
-            <h3>Sodexo Movilpass</h3>
-            <p>
-              Made in Angular 2+, we had to make a complete overhaul of the company's transport service Sodexo's
-              Movilpass.
-            </p>
-            <a href="https://www.movilpass.cl/">View Project</a>
-          </div>
-          <!-- End .project-info -->
-        </div>
-        <!-- End .project -->
-
-        <div class="project shadow-large">
-          <div class="project-image">
-            <img src="images/consorcio_logo.jpeg" />
-          </div>
-          <!-- End .project-image -->
-          <div class="project-info">
-            <h3>Consorcio Portabilidad Financiera</h3>
-            <p>
-              Consorcio required to be made very quickly a Portability Banking service portal, which helps to get
-              potential
-              new
-              clients to bring their previous banking products from other banks to Consorcio.
-            </p>
-            <a href="https://portabilidad.consorcio.cl/">View Project</a>
-          </div>
-          <!-- End .project-info -->
-        </div>
-        <!-- End .project -->
-      </div>
-    </div>
-  </div>
-  <!-- End #projects -->
-
-  <div id="skills">
-    <h2 class="heading">Skills</h2>
-    <ul>
-      <li>JavaScript</li>
-      <li>TypeScript</li>
-      <!-- <li>Python</li> -->
-      <!-- <li>Ruby</li> -->
-      <li>Angular</li>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>Go</li>
-      <!-- <li>Elixir</li> -->
-      <!-- <li>Java</li> -->
-      <!-- <li>C</li> -->
-      <li>C#</li>
-      <!-- <li>C++</li> -->
-      <!-- <li>Ruby on Rails</li> -->
-      <!-- <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li> -->
-    </ul>
-  </div>
-  <!-- End #skills -->
-
-  <div id="contact">
-    <h2>Get in Touch</h2>
-    <div id="contact-form">
-      <form method="POST" action="https://formspree.io/francisco.gonzalez.lorca@gmail.com">
-        <input type="hidden" name="_subject" value="Contact request from personal website" />
-        <input type="email" name="_replyto" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-    <!-- End #contact-form -->
-  </div>
-  <!-- End #contact -->
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-5 copyright">
-          <p>
-            Copyright &copy; <span id="currentYear"></span> RADOCODE
-          </p>
-        </div>
-        <div class="col-sm-2 top">
-          <span id="to-top">
-            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-          </span>
-        </div>
-        <div class="col-sm-5 social">
-          <ul>
-            <li>
-              <a href="https://github.com/radocode" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://stackoverflow.com/users/story/12848514" target="_blank"><i class="fa fa-stack-overflow"
-                  aria-hidden="true"></i></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/franciscogonzalezlorca/" target="_blank"><i class="fa fa-linkedin"
-                  aria-hidden="true"></i></a>
-            </li>
-            <!-- <li>
-              <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </li> -->
-            <li>
-              <a href="https://twitter.com/radocodecl" target="_blank"><i class="fa fa-twitter"
-                  aria-hidden="true"></i></a>
-            </li>
-            <!-- <li>
-              <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"
-                  aria-hidden="true"></i></a>
-            </li> -->
+    <!-- Main Content
+================================================== -->
+    <section id="body" class="">
+      <div class="container">
+        <!-- DESKTOP MENU -->
+        <div class="main-menu" id="main-menu">
+          <ul class="main-menu-list">
+            <li><a href="#page-resume" class="link-home">Home</a></li>
+            <li><a href="#page-resume" class="link-page">Resume</a></li>
+            <li><a href="#page-skills" class="link-page">Skills</a></li>
+            <li><a href="#page-portfolio" class="link-page">Portfolio</a></li>
+            <li><a href="#page-blog" class="link-page">Blog</a></li>
+            <li><a href="#page-contact" class="link-page">Contact</a></li>
           </ul>
         </div>
+        <!-- /DESKTOP MENU -->
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu-container">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+            <a href="#home" class="active">&nbsp</a>
+            <!-- Navigation links (hidden by default) -->
+            <ul id="myLinks">
+              <li><a href="#page-resume">Home</a></li>
+              <li><a href="#page-resume">Resume</a></li>
+              <li><a href="#page-skills">Skills</a></li>
+              <li><a href="#page-portfolio">Portfolio</a></li>
+              <li><a href="#page-blog">Blog</a></li>
+              <li><a href="#page-contact">Contact</a></li>
+            </ul>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="#" class="icon" id="mobile-btn">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+        <!-- /MOBILE MENU -->
+
+        <!-- SECTION: vCard Body  -->
+        <div class="section-vcardbody section-home" id="section-home">
+          <!-- Profile pic-->
+          <div class="vcard-profile-pic">
+            <img src="img/avatar1.webp" id="profile2" alt="" />
+            <img
+              src="img/avatar1.webp"
+              id="profile1"
+              class="profileActive"
+              alt=""
+            />
+          </div>
+          <!-- /Profile pic -->
+          <!-- Description -->
+          <div class="vcard-profile-description">
+            <!-- Profile title -->
+            <h1 class="profile-title">
+              <span class="color1">Francisco González</span>
+            </h1>
+            <h2 class="profile-subtitle">Fullstack JavaScript Developer</h2>
+            <!-- /Profile Title -->
+            <!-- Description Text -->
+            <hr class="hr1" />
+            <div class="vcard-profile-description-text">
+              <p>
+                Hi! I am Francisco. I am a Fullstack Developer, mainly focused
+                in Javascript! I have experiences working with banking, retail
+                and transport industries.
+              </p>
+              <p>
+                I worked on a lot of technologies and frameworks, with small,
+                simple, yet very effective solutions. My favorite
+                frameworks/libraries/runtimes are Angular 2+, Vue.js and
+                Node.js.
+              </p>
+              <p>
+                I also have some experiences with cloud services like AWS
+                (Lambdas and Step Functions) and MS Azure (APIs and Databases).
+                My experiences allowed me to also work with Relational Databases
+                (Postgres and SQL Server) and a bit of NoSQL (MongoDB).
+              </p>
+
+              <p>
+                I am always willing to learn something new and always open to
+                learn new technologies! I also like to work under Agile methods
+                and Scrum/Kanban teams as well.
+              </p>
+            </div>
+            <!--/ Description Text -->
+            <!-- Description feature -->
+            <div class="vcard-profile-description-feature">
+              <!-- item -->
+              <div class="vcard-profile-description-ft-item">
+                <p>email: francisco.gonzalez.lorca@gmail.com</p>
+              </div>
+              <!-- item -->
+            </div>
+            <!-- /Description feature -->
+          </div>
+          <!-- /Description -->
+          <!-- Footer -->
+          <div class="vcard-footer">
+            <!-- Social Icons -->
+            <div class="footer-social-icons">
+              <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+              <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+              <a href="https://twitter.com/radocodecl" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/franciscogonzalezlorca/"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <!-- <a href="#"><i class="fa fa-youtube"></i></a> -->
+            </div>
+            <!-- /Social Icons -->
+          </div>
+        </div>
+        <!-- /SECTION: vCard Body  -->
+
+        <!-- PAGE: RESUME -->
+        <div class="section-vcardbody section-page" id="page-resume">
+          <!-- SECTION: Education -->
+          <div class="section-education">
+            <!-- Section title -->
+            <h2 class="section-title">Resume</h2>
+            <!-- /Section title -->
+
+            <!-- Buttons -->
+            <div class="resume-buttons header-page-buttons">
+              <!-- Download CV button -->
+              <a
+                href="resumes/Francisco Gonzalez Lorca.pdf"
+                target="_blank"
+                class="btn btn-default btn-default2"
+                ><i class="fa fa-download"></i>&nbsp; Download my resume</a
+              >
+              <!-- /Download CV button -->
+              <!-- Get in Touch button -->
+              <a
+                href="#page-contact"
+                class="btn btn-default btn-default2 link-page"
+                ><i class="fa fa-download"></i>&nbsp; Get in Touch</a
+              >
+              <!-- /Get in Touch button -->
+            </div>
+            <!-- /Buttons -->
+
+            <h2 class="section-title2">
+              <i class="fa fa-university"></i>&nbsp; Education
+            </h2>
+
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Graduation title -->
+              <h3 class="section-item-title-1">Bachelor in Computer Science</h3>
+              <!-- /Graduation title -->
+              <!-- Graduation time -->
+              <h4 class="graduation-time">
+                DUOC UC -
+                <span class="graduation-date">Graduation April 2010</span>
+              </h4>
+              <!-- /Graduation time -->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  Focusing in Microsoft Technologies, and volunteer work in the
+                  Microsoft Student Partners program, educational talks in
+                  technology to local college.
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+          </div>
+          <!--/ SECTION: Education -->
+
+          <!-- SECTION: WORK EXPERIENCE -->
+          <div class="section-education">
+            <h2 class="section-title2">
+              <i class="fa fa-flag"></i>&nbsp; Work Experience
+            </h2>
+
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Work Place -->
+              <h3 class="section-item-title-1">X-Team</h3>
+              <!-- /Work Place -->
+              <!-- Job Time -->
+              <h4 class="job">
+                Backend Developer -
+                <span class="job-date">June 2021 - March 2022 </span>
+              </h4>
+              <!-- /Job Time-->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  Backend Developer role for Rstudio, specializing in Node.js
+                  and Microservices with express.js.
+                  <br /><br />
+                  Worked with Salesforce APIs, OAuth Integration, Clearbit, AWS
+                  Lambdas and Step Functions. Maintained and developed high
+                  standard libraries for Rstudio's Business Automation
+                  ecosystem.
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Work Place -->
+              <h3 class="section-item-title-1">Amaris</h3>
+              <!-- /Work Place -->
+              <!-- Job Time -->
+              <h4 class="job">
+                Fullstack Developer -
+                <span class="job-date">March 2019 – June 2021</span>
+              </h4>
+              <!-- /Job Time-->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  Consultant role as a Full-stack developer in Angular 8+,
+                  Vue.js, Node.js and Typescript for different clients,
+                  including Banking and Transport Services (Consorcio Banking
+                  and Sodexo).
+                  <br /><br />
+
+                  - Sodexo: Made in Angular 2+, we had to make a complete
+                  overhaul of the company's transport service Movilpass
+                  (www.movilpass.cl)
+                  <br /><br />
+
+                  - Consorcio: Consorcio required to be made very quickly a
+                  Portability Banking service portal, which helps to get
+                  potential new clients to bring their previous banking products
+                  from other banks to Consorcio. Frontend was made in Vue.js and
+                  mounted in Modyo, which served to host the application very
+                  similar of how Sharepoint or Django does Has cloud integration
+                  with AWS Lambda and API Gateway. Creation of RESTful APIs made
+                  in NestJS, integrating different AWS lambda and legacy
+                  services. We used Redis for cache and CI/CD with Gitlab.
+                  <br /><br />
+
+                  - Extras: Training coach specialist in front-end technologies
+                  (to deliver training courses and workshops) like HTML and
+                  Angular.
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Work Place -->
+              <h3 class="section-item-title-1">Lagash</h3>
+              <!-- /Work Place -->
+              <!-- Job Time -->
+              <h4 class="job">
+                Fullstack Developer -
+                <span class="job-date">Jan 2010 - Apr 2012</span>
+              </h4>
+              <!-- /Job Time-->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  Full-stack developer for a car insurance company called
+                  Tanner, using NodeJS and ReactJS.
+                  <br /><br />
+                  - We developed a car insurance backoffice web portal fully
+                  hosted in Microsoft Azure.
+                  <br /><br />
+                  - Backend was made in Node with Restify, using Azure's cloud
+                  databases for storage.
+                  <br /><br />
+                  - Frontend was made using React + Redux and Material UI for
+                  the components. We had to integrate our microservices made in
+                  Node with the frontend app.
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Work Place -->
+              <h3 class="section-item-title-1">Everis</h3>
+              <!-- /Work Place -->
+              <!-- Job Time -->
+              <h4 class="job">
+                Frontend Developer -
+                <span class="job-date">October 2017 – August 2018</span>
+              </h4>
+              <!-- /Job Time-->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  Front-end developer in Angular 2+/NodeJS for BCI (Office
+                  Banking), as a part of their Migration and Digital
+                  Transformation process.
+
+                  <br /><br />
+                  - We worked in a huge Agile project which involved around five
+                  agile squads all working on the same product. Dailies and
+                  meetings were big!
+                  <br /><br />
+
+                  - My squad had two frontend devs, two backend devs completely
+                  dedicated to Spring Boot, one QA person and one Tech Lead to
+                  guide us. I was one of the frontend devs.
+                  <br /><br />
+
+                  - We frontend devs had also to develop not only in Angular,
+                  but also in the app's BFF (Backend for Frontend) that was made
+                  in Node.js with Express. Our job was to call the microservices
+                  made in Spring Boot and process/format the data ready for the
+                  frontend to use it.
+                  <br /><br />
+
+                  - Technologies used: Angular 2+ (native, Material) and NodeJS
+                  (with Express).
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Work Place -->
+              <h3 class="section-item-title-1">Defontana</h3>
+              <!-- /Work Place -->
+              <!-- Job Time -->
+              <h4 class="job">
+                Developer -
+                <span class="job-date">September 2015 – October 2017</span>
+              </h4>
+              <!-- /Job Time-->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  .NET and VB Developer in ERP Products, Continuous Integration,
+                  and Backend REST solutions for Defontana's Digital
+                  Transformation process.
+                  <br /><br />
+
+                  - Technologies used: C#, VB.NET, WCF (microservices), MS Web
+                  API, ASP.NET, Razor, SQL Server 2018
+                  <br /><br />
+
+                  - Legacy technologies: VB 6, ASP
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Work Place -->
+              <h3 class="section-item-title-1">Tuten</h3>
+              <!-- /Work Place -->
+              <!-- Job Time -->
+              <h4 class="job">
+                Backend Developer -
+                <span class="job-date">April 2015 – August 2015</span>
+              </h4>
+              <!-- /Job Time-->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  Backend designer, REST services programmer, Database
+                  developer.
+                  <br /><br />
+
+                  - TUTEN is a web/mobile app service that helps people search
+                  for professional household services (painting, plumbers,
+                  electrical, etc). Works similar to Uber.
+                  <br /><br />
+
+                  - I designed the database and REST services for TUTEN app's
+                  first version.
+                  <br /><br />
+
+                  - With the team, we travelled to Boston, USA for 3 months to
+                  MassChallenge's 2015 startup accelerator conference, to learn
+                  how to boost the startup business process and development
+                  cycle.
+                  <br /><br />
+
+                  - Technologies used: Java, JAX-RS, Postgres SQL
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+            <!-- Resume Item -->
+            <div class="resume-item">
+              <!-- Work Place -->
+              <h3 class="section-item-title-1">TAISA Chile</h3>
+              <!-- /Work Place -->
+              <!-- Job Time -->
+              <h4 class="job">
+                Developer -
+                <span class="job-date">January 2011 – March 2015</span>
+              </h4>
+              <!-- /Job Time-->
+              <!-- content -->
+              <div class="graduation-description">
+                <p>
+                  Software Developer for web and mobile solutions, using .NET
+                  (C#, ASP.NET), Java (EE and WebSphere), SQL Server, PHP, plus
+                  maintaining some other legacy software used in Banking like
+                  ASP. Clients worked with: Santander, SURA, Corpbanca.
+                  <br /><br />
+
+                  - Technologies used: C#, Java, ASP.NET, ASP, SQL Server.
+                </p>
+              </div>
+              <!-- /Content -->
+            </div>
+            <!-- /Resume Item -->
+          </div>
+          <!--/ SECTION: WORK EXPERIENCE -->
+
+          <div class="page-footer">
+            <!-- Buttons -->
+            <div class="resume-buttons">
+              <!-- Download CV button -->
+              <a href="#" class="btn btn-default btn-default2"
+                ><i class="fa fa-download"></i>&nbsp; Download my resume</a
+              >
+              <!-- /Download CV button -->
+              <!-- Get in Touch button -->
+              <a
+                href="#page-contact"
+                class="btn btn-default btn-default2 link-page"
+                ><i class="fa fa-download"></i>&nbsp; Get in Touch</a
+              >
+              <!-- /Get in Touch button -->
+            </div>
+            <!-- /Buttons -->
+            <!-- Quote -->
+            <!-- <p class="footer-quote">
+              "The best way to predict the future is to create it" <br /><i
+                >Peter Drucker</i
+              >
+            </p> -->
+            <!-- /Quote -->
+          </div>
+        </div>
+        <!-- /PAGE: RESUME  -->
+
+        <!-- SECTION: SKILLS-->
+        <div class="section-vcardbody section-page" id="page-skills">
+          <div class="section-skills">
+            <!-- Section title -->
+            <h2 class="section-title">SKILLS</h2>
+            <!-- /Section title -->
+
+            <!-- Subtitle -->
+            <h3 class="section-item-title-2">
+              <i class="fa fa-users"></i>&nbsp;&nbsp; Professional Skills
+            </h3>
+            <!-- /Subtitle -->
+
+            <!-- Skils List -->
+            <ul class="skills-list">
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-percent="80%"
+                    style="width: 80%"
+                  >
+                    <span class="sr-only">80% Complete</span>
+                  </div>
+                  <span class="progress-type">Comunication</span>
+                  <span class="progress-completed">80%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-percent="85%"
+                    style="width: 85%"
+                  >
+                    <span class="sr-only">85% Complete</span>
+                  </div>
+                  <span class="progress-type">Teamwork</span>
+                  <span class="progress-completed">85%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress" title="Doing my best!">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    data-percent="80%"
+                    style="width: 80%"
+                  >
+                    <span class="sr-only">80% Complete</span>
+                  </div>
+                  <span class="progress-type">Confidence</span>
+                  <span class="progress-completed">80%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+            </ul>
+            <!-- /Skils List -->
+
+            <!-- Subtitle -->
+            <h3 class="section-item-title-2">
+              <i class="fa fa-laptop"></i>&nbsp;&nbsp; Software Skills
+            </h3>
+            <!-- /Subtitle -->
+
+            <!-- Skils List -->
+            <ul class="skills-list">
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="85%"
+                    role="progressbar"
+                    style="width: 85%"
+                  >
+                    <span class="sr-only">85% Complete</span>
+                  </div>
+                  <span class="progress-type">Git</span>
+                  <span class="progress-completed">85%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="85%"
+                    role="progressbar"
+                    style="width: 85%"
+                  >
+                    <span class="sr-only">85% Complete</span>
+                  </div>
+                  <span class="progress-type">Linux</span>
+                  <span class="progress-completed">85%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <!-- <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-3"
+                    data-percent="40%"
+                    role="progressbar"
+                    style="width: 40%"
+                  >
+                    <span class="sr-only">40% Complete</span>
+                  </div>
+                  <span class="progress-type">Adobe Fireworks</span>
+                  <span class="progress-completed">40%</span>
+                </div>
+              </li> -->
+              <!-- /item list -->
+            </ul>
+            <!-- /Skils List -->
+
+            <!-- Subtitle -->
+            <h3 class="section-item-title-2">
+              <i class="fa fa-code"></i>&nbsp;&nbsp; Code Skills
+            </h3>
+            <!-- /Subtitle -->
+
+            <!-- Skils List -->
+            <ul class="skills-list">
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="85%"
+                    role="progressbar"
+                    style="width: 85%"
+                  >
+                    <span class="sr-only">85% Complete</span>
+                  </div>
+                  <span class="progress-type">HTML5 / CSS3</span>
+                  <span class="progress-completed">85%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="85%"
+                    role="progressbar"
+                    style="width: 85%"
+                  >
+                    <span class="sr-only">85% Complete</span>
+                  </div>
+                  <span class="progress-type">JavaScript</span>
+                  <span class="progress-completed">85%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="85%"
+                    role="progressbar"
+                    style="width: 85%"
+                  >
+                    <span class="sr-only">85% Complete</span>
+                  </div>
+                  <span class="progress-type">Angular</span>
+                  <span class="progress-completed">85%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="80%"
+                    role="progressbar"
+                    style="width: 80%"
+                  >
+                    <span class="sr-only">80% Complete</span>
+                  </div>
+                  <span class="progress-type">Node.js</span>
+                  <span class="progress-completed">80%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="80%"
+                    role="progressbar"
+                    style="width: 80%"
+                  >
+                    <span class="sr-only">80% Complete</span>
+                  </div>
+                  <span class="progress-type">SQL</span>
+                  <span class="progress-completed">80%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="80%"
+                    role="progressbar"
+                    style="width: 80%"
+                  >
+                    <span class="sr-only">80% Complete</span>
+                  </div>
+                  <span class="progress-type">TypeScript</span>
+                  <span class="progress-completed">80%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="50%"
+                    role="progressbar"
+                    style="width: 50%"
+                  >
+                    <span class="sr-only">50% Complete</span>
+                  </div>
+                  <span class="progress-type">Vue.js</span>
+                  <span class="progress-completed">50%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+              <!-- item-list -->
+              <li>
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    data-percent="50%"
+                    role="progressbar"
+                    style="width: 50%"
+                  >
+                    <span class="sr-only">50% Complete</span>
+                  </div>
+                  <span class="progress-type">React.js</span>
+                  <span class="progress-completed">50%</span>
+                </div>
+              </li>
+              <!-- /item list -->
+            </ul>
+            <!-- /Skils List -->
+          </div>
+        </div>
+        <!-- /SECTION: SKILLS  -->
+
+        <!-- SECTION: PORTFOLIO-->
+        <div class="section-vcardbody section-page" id="page-portfolio">
+          <div class="section-portfolio">
+            <!-- Section title -->
+            <h2 class="section-title">Portfolio</h2>
+            <!-- /Section title -->
+
+            <!-- Projects list -->
+            <div class="projects-list">
+              <!-- item -->
+              <div class="project-item">
+                <!-- ==> Put your thumbnail as a background -->
+                <a
+                  href="https://portabilidad.consorcio.cl/"
+                  target="_blank"
+                  class="project-thumbnail nivobox"
+                  data-lightbox-gallery="portfolio"
+                  style="
+                    background-image: url('img/portfolio/consorcio_logo.jpeg');
+                  "
+                >
+                  <!-- project-description -->
+                  <div class="project-description-wrapper">
+                    <div class="project-description">
+                      <!-- project name -->
+                      <h2 class="project-title">
+                        Consorcio Banking Portability
+                      </h2>
+                      <!-- /project name -->
+                      <span class="see-more"
+                        >Vue.js, Node.js, AWS, Salesforce</span
+                      >
+                    </div>
+                  </div>
+                  <!-- /project-description -->
+                </a>
+              </div>
+              <!-- /item -->
+
+              <!-- item -->
+              <div class="project-item">
+                <!-- ==> Put your thumbnail as a background -->
+                <a
+                  href="https://www.movilpass.cl/"
+                  target="_blank"
+                  class="project-thumbnail nivobox"
+                  data-lightbox-gallery="portfolio"
+                  style="
+                    background-image: url('img/portfolio/logo_movil_portada.png');
+                  "
+                >
+                  <!-- project-description -->
+                  <div class="project-description-wrapper">
+                    <div class="project-description">
+                      <!-- project name -->
+                      <h2 class="project-title">Sodexo Movilpass</h2>
+                      <!-- /project name -->
+                      <span class="see-more">Angular, Node.js</span>
+                    </div>
+                  </div>
+                  <!-- /project-description -->
+                </a>
+              </div>
+              <!-- /item -->
+            </div>
+            <!-- /projects list -->
+          </div>
+        </div>
+        <!-- /SECTION: PORTFOLIO  -->
+
+        <!-- SECTION: BLOG-->
+        <div class="section-vcardbody section-page" id="page-blog">
+          <div class="section-blog">
+            <!-- Section title -->
+            <h2 class="section-title">Blog</h2>
+            <!-- /Section title -->
+
+            <!--Vue content-->
+            <div id="app">
+              <div v-if="loading" class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <!-- BLOG POSTS -->
+              <div v-else class="blog-posts">
+                <!-- blog-item -->
+                <div
+                  v-for="blogPost in blogPosts"
+                  :class="[blogPost.url ? 'blog-item': '', '']"
+                >
+                  <div :class="[blogPost.url ? 'blog-item-wrapper': '', '']">
+                    <!-- blog item thumbnail -->
+                    <div :class="[blogPost.url ? 'blog-item-thumb': '', '']">
+                      <a
+                        v-if="blogPost.url"
+                        :href="blogPost.url"
+                        :class="[blogPost.url ? 'loadPost': '', '']"
+                        ><img
+                          v-if="blogPost.social_image"
+                          :src="blogPost.social_image"
+                          alt=""
+                      /></a>
+                    </div>
+                    <!-- /blog item thumbnail -->
+                    <!-- Blog item - infos -->
+                    <div
+                      class="blog-item-infos"
+                      :class="[blogPost.url ? 'blog-item-infos': '', '']"
+                    >
+                      <!-- blog-item-title -->
+                      <div v-if="blogPost.title">
+                        <h2
+                          :class="[blogPost.url ? 'blog-item-title title-border': '', '']"
+                        >
+                          <a
+                            :href="blogPost.url"
+                            target="_blank"
+                            :class="[blogPost.url ? 'loadPost': '', '']"
+                            >{{blogPost.title}}</a
+                          >
+                        </h2>
+                      </div>
+                      <!-- /blog-item-title -->
+                      <!-- blog item - description -->
+                      <div
+                        v-if="blogPost.description && blogPost.url"
+                        class="blog-item-description"
+                      >
+                        <p>
+                          <a
+                            :href="blogPost.url"
+                            target="_blank"
+                            class="loadPost"
+                            >{{blogPost.description}}</a
+                          >
+                        </p>
+                      </div>
+                      <!-- /blog-item-description -->
+                      <!-- blog item - link -->
+                      <div v-if="blogPost.url" class="blog-item-link">
+                        <a
+                          :href="blogPost.url"
+                          target="_blank"
+                          class="btn btn-default loadPost"
+                          >See More</a
+                        >
+                      </div>
+                      <!-- /blog item - link -->
+                    </div>
+                    <!-- /blog item - infos -->
+                  </div>
+                </div>
+                <!-- /blog-item -->
+              </div>
+            </div>
+            <!-- /BLOG POSTS -->
+            <!-- Pagination -->
+            <!-- <div class="section-pagination">
+              <div class="row">
+                <div class="col-xs-12">
+                  <span class="pagination-numbers">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                  </span>
+                </div>
+              </div>
+            </div> -->
+            <!-- /Pagination -->
+          </div>
+        </div>
+        <!-- /SECTION: BLOG  -->
+
+        <!-- SECTION: BLOG SINGLE-->
+        <div
+          class="section-vcardbody section-page section-page-single"
+          id="page-blog-single"
+        >
+          <div class="section-blog-single">
+            <!-- Load the single.html content via AJAX -->
+            <div id="postHere"></div>
+            <!-- /Load the single.html content via AJAX -->
+          </div>
+        </div>
+        <!-- /SECTION: BLOG SINGLE  -->
+
+        <!-- SECTION: CONTACT-->
+        <div class="section-vcardbody section-page" id="page-contact">
+          <div class="section-contact">
+            <!-- Section title -->
+            <h2 class="section-title">Contact</h2>
+            <!-- /Section title -->
+
+            <!-- Contact infos -->
+            <div class="contact-infos">
+              <!-- <h4 class="contact-subtitle-1">
+                <i class="fa fa-map"></i>&nbsp; Address
+              </h4>
+              <p>451 Lorem Ipsum, London - Uk</p> -->
+              <!-- <h4 class="contact-subtitle-1">
+                <i class="fa fa-phone-square"></i>&nbsp; Phone
+              </h4>
+              <p></p> -->
+              <h4 class="contact-subtitle-1">
+                <i class="fa fa-envelope"></i>&nbsp; Mail
+              </h4>
+              <p>francisco.gonzalez.lorca@gmail.com</p>
+            </div>
+            <!-- /Contact infos -->
+
+            <!-- Contact form -->
+            <h4 class="contact-subtitle-1">
+              <i class="fa fa-paper-plane-o"></i>&nbsp; Send Me a Message
+            </h4>
+            <form id="contactForm" method="post" class="form">
+              <input
+                type="hidden"
+                name="_subject"
+                value="Contact request from personal website Radocode"
+              />
+              <!-- Form Field -->
+              <div class="form-group">
+                <input
+                  class="form-control required"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  type="text"
+                  required
+                />
+              </div>
+              <!-- /Form Field -->
+              <!-- Form Field -->
+              <div class="form-group">
+                <input
+                  class="form-control required"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  required
+                />
+              </div>
+              <!-- /Form Field -->
+              <!-- Form Field -->
+              <div class="form-group">
+                <input
+                  class="form-control required"
+                  id="subject"
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <!-- /Form Field -->
+              <!-- Form Field -->
+              <div class="form-group">
+                <textarea
+                  class="form-control required"
+                  id="message"
+                  name="message"
+                  placeholder="Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <!-- /Form Field -->
+              <!-- Form Field -->
+              <div class="form-group">
+                <input
+                  type="submit"
+                  class="btn btn-default form-send"
+                  value="Send!"
+                />
+              </div>
+              <!-- /Form Field -->
+            </form>
+            <!-- /Contact Form -->
+          </div>
+        </div>
+        <!-- /SECTION: CONTACT  -->
+      </div>
+    </section>
+    <!-- /Main Content
+================================================== -->
+
+    <!-- Contact Form - Ajax Messages
+========================================================= -->
+    <!-- Form Sucess -->
+    <div class="form-result modal-wrap" id="contactSuccess">
+      <div class="modal-bg"></div>
+      <div class="modal-content">
+        <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
+        <p>Your message has been sent to us.</p>
       </div>
     </div>
-  </footer>
-  <!-- End footer -->
+    <!-- /Form Sucess -->
+    <!-- form-error -->
+    <div class="form-result modal-wrap" id="contactError">
+      <div class="modal-bg"></div>
+      <div class="modal-content">
+        <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
+        <p>There was an error sending your message.</p>
+      </div>
+    </div>
+    <!-- /form-error -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/scripts.min.js"></script>
-  <script>
-     // get current year
-     $("#currentYear").text( (new Date).getFullYear() );
-  </script>
-</body>
+    <!-- Contact Form - Ajax Messages
+========================================================= -->
 
+    <!-- >> JS
+============================================================================== -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/validate.js"></script>
+    <!-- Holder JS -->
+    <script src="vendor/holder.js"></script>
+    <!-- Modal box-->
+    <script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+    <!-- /Modal Box -->
+    <!-- Perfect ScrolBar -->
+    <script src="vendor/perfect-scrollbar/js/min/perfect-scrollbar.jquery.min.js"></script>
+    <!-- /Perfect ScrolBar -->
+    <!-- Owl Caroulsel -->
+    <script src="vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
+    <!-- Cross-browser -->
+    <script src="vendor/cross-browser.js"></script>
+    <!-- Main Scripts -->
+    <script src="js/main.js"></script>
+    <!--Vue-->
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.prod.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import { createApp } from "vue";
+
+      createApp({
+        data() {
+          return {
+            blogPosts: [{ title: "Coming soon!" }], // init default data in case of error
+            username: "radocode",
+            loading: true,
+          };
+        },
+        mounted() {
+          return fetch(`https://dev.to/api/articles?username=${this.username}`)
+            .then((result) => result.json())
+            .then((jsonResult) => {
+              if (jsonResult.length > 0) this.blogPosts = jsonResult;
+
+              this.loading = false;
+            })
+            .catch((err) => {
+              console.log("err: ", err);
+              this.loading = false;
+            });
+        },
+      }).mount("#app");
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="vendor/html5shiv.js"></script>
+      <script src="vendor/respond.min.js"></script>
+    <![endif]-->
+    <!-- >> /JS
+============================================================================= -->
+  </body>
 </html>
